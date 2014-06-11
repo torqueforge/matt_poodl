@@ -12,13 +12,13 @@ You will need:
 Clone this repository:
 
 ```bash
-$ git glone https://github.com/torqueforge/poodltest.git
+$ git glone https://github.com/torqueforge/$NAME_OF_CLASS.git
 ```
 
 Change directories so that you are in the project:
 
 ```bash
-$ cd poodltest
+$ cd $NAME_OF_CLASS
 ```
 
 Install the dependencies:
