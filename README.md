@@ -30,68 +30,80 @@ $ bundle install
 
 ## Sanity Check Setup
 
-To verify that everything is set up so that we can get off to a flying start, run the following command:
+To verify that everything is set up correctly, run the following command:
 
 ```bash
 $ ruby sanity_test.rb
 ```
 
-You should get an error complaining that **cannot load such file -- sanity (LoadError)**.
-
-For example:
-
+You should see the following output.
 ```bash
-/Users/you/.rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot load such file -- sanity (LoadError)
-  from /Users/you/.rubies/ruby-2.1.1/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
-  from sanity_test.rb:3:in `<main>'
+$ ruby sanity_test.rb
+Run options: --seed 62459
+
+# Running:
+
+.
+
+Finished in 0.001317s, 759.3014 runs/s, 759.3014 assertions/s.
+
+1 runs, 1 assertions, 0 failures, 0 errors, 0 skips
 ```
 
 ## Exercises
 
-As the class progresses we will add exercises and solutions to
-the master branch.
-
-Each exercise is in its own subdirectory, and has its own README.
+Class consists of a number of exercises. Each exercise has its own
+subdirectory and README.
 
 ## Working on the exercises
 
-Start on master.
+We'll tell you the next exercise to work on (for example, 'house').  Every
+exercise is in a separate folder. Each exercise folder contains a README which
+tells you what to do for that specific exercise.
 
+As we work on each exercise, we'll periodically add intermediate solutions
+to master on github and ask you to pull the code. This means that your life will
+be easier if you NEVER UPDATE your local MASTER. Instead, it's best to do your
+work in local branches.
+
+Therefore, to work on the 'house' problem you would
 ```bash
 $ git checkout master
 ```
 
-Create a new branch:
-
+Create a new branch to hold your work on this exercise:
 ```bash
-$ git checkout -b my-new-branch
+$ git checkout -b my-house-branch
 ```
 
-When you've gotten your test suite to pass stage all the changes:
+Change to the house directory and work on the exercise:
+```bash
+$ cd house
+```
 
+When you want to save your work, stage and commit your changes:
 ```bash
 $ git add . # notice the dot
-```
-
-Then commit the changes:
-
-```bash
 $ git commit -m "Explain your change here"
 ```
 
-When we start working on a new section, switch back to master:
-
+When we start working on the next section of house (or move to a new exercise
+altogether) save your outstanding work (as above) and then switch back to master:
 ```bash
 $ git checkout master
 ```
 
-Then pull the latest version from GitHub:
-
+Pull the latest version from GitHub:
 ```bash
 $ git pull origin
 ```
 
-Then create a new branch. Wash. Rinse. Repeat.
+Then create another new branch to work on the next thing.
+```bash
+$ git checkout -b my-house-branch-2 # for the next section of 'house'
+$ # or
+$ git checkout -b my-bottles-branch # for a new exercise entirely
+```
 
 ## Git: Troubleshooting / Recovery
 

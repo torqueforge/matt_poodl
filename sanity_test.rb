@@ -1,6 +1,8 @@
 gem 'minitest'
 require 'minitest/autorun'
-require 'sanity'
+
+class Sanity < Struct.new(:answer)
+end
 
 class SanityTest < Minitest::Test
   def test_it_works
