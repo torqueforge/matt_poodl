@@ -1,7 +1,6 @@
 # http://en.wikipedia.org/wiki/There_Was_an_Old_Lady_Who_Swallowed_a_Fly
-gem 'minitest', '~> 5.2'
-require 'minitest/autorun'
-require './lib/food_chain'
+require_relative '../../test_helper'
+require_relative '../lib/food_chain'
 
 class FoodChainTest < Minitest::Test
   attr_reader :food_chain
@@ -15,6 +14,7 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_spider
+    skip
     expected = "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\n" +
       "She swallowed the spider to catch the fly.\n" +
       "I don't know why she swallowed the fly. Perhaps she'll die.\n"
@@ -22,6 +22,7 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_bird
+    skip
     expected = "I know an old lady who swallowed a bird.\n" +
       "How absurd to swallow a bird!\n" +
       "She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\n" +
@@ -31,6 +32,7 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_cat
+    skip
     expected = "I know an old lady who swallowed a cat.\n" +
       "Imagine that, to swallow a cat!\n" +
       "She swallowed the cat to catch the bird.\n" +
@@ -42,6 +44,7 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_dog
+    skip
     expected = "I know an old lady who swallowed a dog.\n" +
       "What a hog, to swallow a dog!\n" +
       "She swallowed the dog to catch the cat.\n" +
@@ -54,6 +57,7 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_goat
+    skip
     expected = "I know an old lady who swallowed a goat.\n" +
       "Just opened her throat and swallowed a goat!\n" +
       "She swallowed the goat to catch the dog.\n" +
@@ -68,6 +72,7 @@ class FoodChainTest < Minitest::Test
 
 
   def test_cow
+    skip
     expected = "I know an old lady who swallowed a cow.\n" +
       "I don't know how she swallowed a cow!\n" +
       "She swallowed the cow to catch the goat.\n" +
@@ -82,12 +87,14 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_horse
+    skip
     expected = "I know an old lady who swallowed a horse.\n" +
       "She's dead, of course!\n"
     assert_equal expected, food_chain.verse(8)
   end
 
   def test_a_couple_of_verses
+    skip
     expected = <<-VERSES
 I know an old lady who swallowed a fly.
 I don't know why she swallowed the fly. Perhaps she'll die.
@@ -101,6 +108,7 @@ VERSES
   end
 
   def test_a_few_verses
+    skip
     expected = <<-VERSES
 I know an old lady who swallowed a bird.
 How absurd to swallow a bird!
@@ -127,6 +135,7 @@ VERSES
   end
 
   def test_the_whole_song
+    skip
     expected = <<-LYRICS
 I know an old lady who swallowed a fly.
 I don't know why she swallowed the fly. Perhaps she'll die.

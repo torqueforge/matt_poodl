@@ -1,7 +1,6 @@
 # See http://en.wikipedia.org/wiki/Cumulative_song
-gem 'minitest', '~> 5.2'
-require 'minitest/autorun'
-require_relative 'twelve_days'
+require_relative '../../test_helper'
+require_relative '../lib/twelve_days'
 
 class TwelveDaysTest < Minitest::Test
 
