@@ -1,9 +1,18 @@
 class Bottles
 
+  def song
+    verses(99, 0)
+  end
+
+  def verses(first, last)
+    (last..first).map { |i| verse(i) }.reverse.join("\n")
+  end
+
   def verse(number)
     "#{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.\n" + "#{action(number)}, #{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
   end
 
+  private
   def container(number)
     if number == 1
       'bottle'
@@ -36,14 +45,6 @@ class Bottles
     else
       "Take #{pronoun(number)} down and pass it around"
     end
-  end
-
-  def verses(first, last)
-    (last..first).map { |i| verse(i) }.reverse.join("\n")
-  end
-
-  def song
-    verses(99, 0)
   end
 
 end
