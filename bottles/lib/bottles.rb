@@ -14,7 +14,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     end
   end
 
-  def container(number=nil)
+  def container(number)
     if number == 1
       'bottle'
     else
