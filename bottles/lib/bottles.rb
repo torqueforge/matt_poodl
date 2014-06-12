@@ -20,8 +20,12 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     end
   end
 
-  def pronoun
-    'one'
+  def pronoun(number=nil)
+    if number == 1
+      'it'
+    else
+      'one'
+    end
   end
 
   def verses(first, last)
