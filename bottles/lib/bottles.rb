@@ -28,8 +28,12 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     end
   end
 
-  def quantity
-    'no more'
+  def quantity(number=0)
+    if number == 0
+      'no more'
+    else
+      number.to_s
+    end
   end
 
   def verses(first, last)
