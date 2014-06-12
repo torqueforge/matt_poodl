@@ -4,7 +4,7 @@ class Bottles
     if number > 2
       "#{number} bottles of beer on the wall, #{number} bottles of beer.\n" + "Take one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
     elsif number > 1
-      "#{number} bottles of beer on the wall, #{number} bottles of beer.\n" + "Take one down and pass it around, #{number-1} bottle of beer on the wall.\n"
+      "#{number} bottles of beer on the wall, #{number} bottles of beer.\n" + "Take one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
     elsif number == 1
       "#{number} bottle of beer on the wall, #{number} bottle of beer.\n" + "Take it down and pass it around, no more bottles of beer on the wall.\n"
     elsif number == 0
