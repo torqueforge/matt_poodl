@@ -14,8 +14,12 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     end
   end
 
-  def container
-    'bottles'
+  def container(number=nil)
+    if number == 1
+      'bottle'
+    else
+      'bottles'
+    end
   end
 
   def verses(first, last)
