@@ -25,7 +25,9 @@ class Bottles
   end
 
   def quantity(number)
-    if number == 0
+    if number == -1
+      99.to_s
+    elsif number == 0
       'no more'
     else
       number.to_s
