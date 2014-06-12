@@ -4,7 +4,7 @@ class Bottles
     if number > 1
       "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take #{pronoun(number)} down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
     elsif number == 1
-      "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take it down and pass it around, no more bottles of beer on the wall.\n"
+      "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take #{pronoun(number)} down and pass it around, no more bottles of beer on the wall.\n"
     elsif number == 0
       %q{No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
