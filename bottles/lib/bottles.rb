@@ -1,7 +1,7 @@
 class Bottles
 
   def verse(number)
-    if number > 1
+    if number >= 1
       "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take #{pronoun(number)} down and pass it around, #{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     elsif number == 1
       "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take #{pronoun(number)} down and pass it around, #{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
