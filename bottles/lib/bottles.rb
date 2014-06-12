@@ -2,9 +2,9 @@ class Bottles
 
   def verse(number)
     if number > 1
-      "#{number} #{container(number)} of beer on the wall, #{number} bottles of beer.\n" + "Take one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
+      "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
     elsif number == 1
-      "#{number} #{container(number)} of beer on the wall, #{number} bottle of beer.\n" + "Take it down and pass it around, no more bottles of beer on the wall.\n"
+      "#{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.\n" + "Take it down and pass it around, no more bottles of beer on the wall.\n"
     elsif number == 0
       %q{No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
