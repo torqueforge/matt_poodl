@@ -4,7 +4,7 @@ class Bottles
     if number >= 1
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.\n" + "#{action(number)}, #{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     elsif number == 0
-      "#{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.\n" + "#{action(number)}, 99 bottles of beer on the wall.\n"
+      "#{quantity(number).capitalize} #{container(number)} of beer on the wall, #{quantity(number)} #{container(number)} of beer.\n" + "#{action(number)}, #{quantity(number-1)} bottles of beer on the wall.\n"
     end
   end
 
