@@ -28,6 +28,10 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
     end
   end
 
+  def quantity
+    'no more'
+  end
+
   def verses(first, last)
     (last..first).map { |i| verse(i) }.reverse.join("\n")
   end
