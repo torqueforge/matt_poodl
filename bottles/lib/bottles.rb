@@ -9,7 +9,7 @@ class Bottles
   end
 
   def verse(number)
-    Verse.new(number).verse(number)
+    Verse.new(number).verse
   end
 end
 
