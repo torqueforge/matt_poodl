@@ -13,7 +13,12 @@ class Bottles
   end
 
   def variant(number)
-    VerseVariant.new(number)
+    case number
+    when 1
+      VerseVariant1
+    else
+      VerseVariant
+    end.new(number)
   end
 end
 
