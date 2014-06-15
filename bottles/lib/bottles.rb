@@ -33,31 +33,6 @@ class Verse
     "#{action}, " +
     "#{final_quantity} #{final_container} of beer on the wall.\n"
   end
-
-  private
-  def initial_container
-    variant.initial_container
-  end
-
-  def final_container
-    variant.final_container
-  end
-
-  def initial_quantity
-    variant.initial_quantity
-  end
-
-  def final_quantity
-    variant.final_quantity
-  end
-
-  def action
-    variant.action
-  end
-
-  def pronoun
-    variant.pronoun
-  end
 end
 
 class VerseVariant
