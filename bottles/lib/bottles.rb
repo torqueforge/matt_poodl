@@ -15,6 +15,7 @@ end
 
 class Verse
   attr_reader :number
+
   def initialize(number)
     @number = number
   end
@@ -76,5 +77,4 @@ class Verse
       'one'
     end
   end
-
 end
