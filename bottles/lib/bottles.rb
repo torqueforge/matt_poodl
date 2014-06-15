@@ -51,6 +51,10 @@ class BottleNumber
   def action
     "Take #{pronoun} down and pass it around"
   end
+
+  def next
+    self.class.bottle_number_for(number == 0 ? 99 : number-1)
+  end
 end
 
 class BottleNumber0 < BottleNumber
