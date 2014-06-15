@@ -5,6 +5,7 @@ class Bottles
   end
 
   def verses(upper_bound, lower_bound)
+    upper_bound.downto(lower_bound).map { |i| verse(i) }.join("\n")
     (lower_bound..upper_bound).map { |i| verse(i) }.reverse.join("\n")
   end
 
