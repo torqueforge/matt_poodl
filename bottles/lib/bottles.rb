@@ -66,13 +66,13 @@ class BottleNumber
   end
 
   def next
-    self.class.bottle_number_for(number-1)
+    (number-1).to_bottle_number
   end
 end
 
 class BottleNumber0 < BottleNumber
   def next
-    self.class.bottle_number_for(99)
+    99.to_bottle_number
   end
 
   def quantity
