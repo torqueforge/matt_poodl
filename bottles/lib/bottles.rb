@@ -51,3 +51,45 @@ class Bottles
   end
 
 end
+
+class BottleNumber
+  attr_reader :number
+
+  def initialze(number)
+    @number = number
+  end
+
+  def container(number)
+    if number == 1
+      'bottle'
+    else
+      'bottles'
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      'it'
+    else
+      'one'
+    end
+  end
+
+  def quantity(number)
+    if number == -1
+      99.to_s
+    elsif number == 0
+      'no more'
+    else
+      number.to_s
+    end
+  end
+
+  def action(number)
+    if number == 0
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun(number)} down and pass it around"
+    end
+  end
+end
