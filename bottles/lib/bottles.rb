@@ -16,6 +16,8 @@ class Bottles
     case number
     when 1
       VerseVariant1
+    when 2
+      VerseVariant2
     else
       VerseVariant
     end.new(number)
