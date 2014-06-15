@@ -61,16 +61,6 @@ class Verse
     end
   end
 
-  def quantity(number=self.number)
-    if number == -1
-      99.to_s
-    elsif number == 0
-      'no more'
-    else
-      number.to_s
-    end
-  end
-
   def action
     if number == 0
       "Go to the store and buy some more"
