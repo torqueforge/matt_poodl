@@ -35,7 +35,7 @@ class Verse
     end
   end
 
-  def pronoun(number)
+  def pronoun(number=self.number)
     if number == 1
       'it'
     else
