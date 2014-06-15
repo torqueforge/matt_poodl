@@ -53,11 +53,7 @@ class BottleNumber
   end
 
   def next
-    if number == 0
-      self.class.bottle_number_for(99)
-    else
-      self.class.bottle_number_for(number-1)
-    end
+    self.class.bottle_number_for(number-1)
   end
 end
 
