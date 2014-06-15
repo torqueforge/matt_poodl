@@ -38,20 +38,20 @@ class BottleNumber
     @number = number
   end
 
-  def container
-    'bottles'
-  end
-
-  def pronoun
-    'one'
-  end
-
   def quantity
     number.to_s
   end
 
+  def container
+    'bottles'
+  end
+
   def action
     "Take #{pronoun} down and pass it around"
+  end
+
+  def pronoun
+    'one'
   end
 
   def next
@@ -60,16 +60,16 @@ class BottleNumber
 end
 
 class BottleNumber0 < BottleNumber
-  def next
-    99.to_bottle_number
-  end
-
   def quantity
     'no more'
   end
 
   def action
     "Go to the store and buy some more"
+  end
+
+  def next
+    99.to_bottle_number
   end
 end
 
