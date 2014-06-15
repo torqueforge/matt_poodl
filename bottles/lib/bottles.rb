@@ -78,3 +78,60 @@ class Verse
     end
   end
 end
+
+class VerseVariant
+  attr_reader :number
+  def initialize(number)
+    @number = number
+  end
+
+  def initial_container
+    if number == 1
+      'bottle'
+    else
+      'bottles'
+    end
+  end
+
+  def final_container
+    if number == 2
+      'bottle'
+    else
+      'bottles'
+    end
+  end
+
+  def initial_quantity
+    if number == 0
+      'no more'
+    else
+      number.to_s
+    end
+  end
+
+  def final_quantity
+    if number == 0
+      99.to_s
+    elsif number == 1
+      'no more'
+    else
+      (number-1).to_s
+    end
+  end
+
+  def action
+    if number == 0
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun} down and pass it around"
+    end
+  end
+
+  def pronoun
+    if number == 1
+      'it'
+    else
+      'one'
+    end
+  end
+end
