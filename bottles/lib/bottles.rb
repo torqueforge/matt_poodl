@@ -14,10 +14,11 @@ class Bottles
 end
 
 class Verse
-  attr_reader :number
+  attr_reader :number, :variant
 
   def initialize(number)
     @number = number
+    @variant = VerseVariant.new(number)
   end
 
   def verse
