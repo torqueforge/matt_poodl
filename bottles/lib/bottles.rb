@@ -53,6 +53,11 @@ class Bottles
 end
 
 class Verse
+  attr_reader :number
+  def initialize(number)
+    @number = number
+  end
+
   def verse(number)
     "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
     "#{quantity(number)} #{container(number)} of beer.\n" +
