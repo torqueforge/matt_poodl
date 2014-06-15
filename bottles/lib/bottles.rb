@@ -89,6 +89,12 @@ class VerseVariant
   end
 end
 
+class VerseVariant0 < VerseVariant
+  def initial_quantity
+    'no more'
+  end
+end
+
 class VerseVariant1 < VerseVariant
   def initial_container
     'bottle'
