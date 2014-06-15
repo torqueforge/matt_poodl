@@ -73,8 +73,6 @@ class VerseVariant
   def final_quantity
     if number == 0
       99.to_s
-    elsif number == 1
-      'no more'
     else
       (number-1).to_s
     end
