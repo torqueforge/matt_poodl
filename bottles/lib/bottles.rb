@@ -43,7 +43,7 @@ class Verse
     end
   end
 
-  def quantity(number)
+  def quantity(number=self.number)
     if number == -1
       99.to_s
     elsif number == 0
