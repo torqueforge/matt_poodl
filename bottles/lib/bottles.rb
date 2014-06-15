@@ -22,7 +22,7 @@ class Verse
   def verse
     "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
     "#{quantity(number)} #{container(number)} of beer.\n" +
-    "#{action(number)}, " +
+    "#{action}, " +
     "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
   end
 
