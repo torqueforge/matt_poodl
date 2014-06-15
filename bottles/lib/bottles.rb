@@ -30,27 +30,27 @@ class Verse
 
   private
   def initial_container
-    VerseVariant.new(number).initial_container
+    variant.initial_container
   end
 
   def final_container
-    VerseVariant.new(number).final_container
+    variant.final_container
   end
 
   def initial_quantity
-    VerseVariant.new(number).initial_quantity
+    variant.initial_quantity
   end
 
   def final_quantity
-    VerseVariant.new(number).final_quantity
+    variant.final_quantity
   end
 
   def action
-    VerseVariant.new(number).action
+    variant.action
   end
 
   def pronoun
-    VerseVariant.new(number).pronoun
+    variant.pronoun
   end
 end
 
