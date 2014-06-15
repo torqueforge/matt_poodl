@@ -14,6 +14,8 @@ class Bottles
 
   def variant(number)
     case number
+    when 0
+      VerseVariant0
     when 1
       VerseVariant1
     when 2
