@@ -36,6 +36,7 @@ end
 
 class VerseVariant
   attr_reader :number
+
   def initialize(number)
     @number = number
   end
