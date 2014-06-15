@@ -91,6 +91,10 @@ class VerseVariant0 < VerseVariant
   def initial_quantity
     'no more'
   end
+
+  def final_quantity
+    99.to_s
+  end
 end
 
 class VerseVariant1 < VerseVariant
