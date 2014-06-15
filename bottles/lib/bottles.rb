@@ -13,14 +13,9 @@ class Bottles
   end
 
   def variant(number)
-    case number
-    when 0
-      VerseVariant0
-    when 1
-      VerseVariant1
-    when 2
-      VerseVariant2
-    else
+    begin
+      Object.const_get("VerseVariant#{number}")
+    rescue NameError
       VerseVariant
     end.new(number)
   end
