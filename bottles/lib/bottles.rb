@@ -16,42 +16,6 @@ class Bottles
     "#{bottle_number.action}, " +
     "#{next_bottle_number.quantity} #{next_bottle_number.container} of beer on the wall.\n"
   end
-
-  private
-  def container(bottle_number)
-    if bottle_number == 1
-      'bottle'
-    else
-      'bottles'
-    end
-  end
-
-  def pronoun(bottle_number)
-    if bottle_number == 1
-      'it'
-    else
-      'one'
-    end
-  end
-
-  def quantity(bottle_number)
-    if bottle_number == -1
-      99.to_s
-    elsif bottle_number == 0
-      'no more'
-    else
-      bottle_number.to_s
-    end
-  end
-
-  def action(bottle_number)
-    if bottle_number == 0
-      "Go to the store and buy some more"
-    else
-      "Take #{pronoun(bottle_number)} down and pass it around"
-    end
-  end
-
 end
 
 class BottleNumber
