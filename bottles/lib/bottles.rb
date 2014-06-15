@@ -10,7 +10,7 @@ class Bottles
 
   def verse(number)
     bottle_number = BottleNumber.new(number)
-    "#{bottle_number.quantity(number).capitalize} #{container(number)} of beer on the wall, " +
+    "#{bottle_number.quantity.capitalize} #{container(number)} of beer on the wall, " +
     "#{quantity(number)} #{container(number)} of beer.\n" +
     "#{action(number)}, " +
     "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
@@ -76,7 +76,7 @@ class BottleNumber
     end
   end
 
-  def quantity(number)
+  def quantity
     if number == -1
       99.to_s
     elsif number == 0
