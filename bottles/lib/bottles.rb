@@ -91,3 +91,9 @@ class VerseVariant
     end
   end
 end
+
+class VerseVariant1 < VerseVariant
+  def initial_container
+    'bottle'
+  end
+end
