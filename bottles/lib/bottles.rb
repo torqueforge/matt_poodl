@@ -29,12 +29,12 @@ class Verse
 
   private
   def initial_container
-    VerseVariant.new(number).initial_container
     if number == 1
       'bottle'
     else
       'bottles'
     end
+    VerseVariant.new(number).initial_container
   end
 
   def final_container
