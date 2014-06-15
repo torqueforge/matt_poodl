@@ -87,11 +87,7 @@ class VerseVariant
   end
 
   def pronoun
-    if number == 1
-      'it'
-    else
-      'one'
-    end
+    'one'
   end
 end
 
