@@ -72,3 +72,6 @@ class BottleNumber0 < BottleNumber
     "Go to the store and buy some more"
   end
 end
+
+class BottleNumber1 < BottleNumber
+end
