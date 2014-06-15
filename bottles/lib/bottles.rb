@@ -53,7 +53,7 @@ class Verse
     end
   end
 
-  def action(number=self.number)
+  def action
     if number == 0
       "Go to the store and buy some more"
     else
