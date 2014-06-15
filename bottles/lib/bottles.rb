@@ -12,7 +12,7 @@ class Bottles
     bottle_number = BottleNumber.new(number)
     "#{bottle_number.quantity.capitalize} #{bottle_number.container} of beer on the wall, " +
     "#{bottle_number.quantity} #{bottle_number.container} of beer.\n" +
-    "#{action(number)}, " +
+    "#{bottle_number.action}, " +
     "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
   end
 
@@ -86,7 +86,7 @@ class BottleNumber
     end
   end
 
-  def action(number)
+  def action
     if number == 0
       "Go to the store and buy some more"
     else
