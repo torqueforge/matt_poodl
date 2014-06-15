@@ -9,7 +9,7 @@ class Bottles
   end
 
   def verse(number)
-    Verse.new(number).verse
+    Verse.new(number).to_s
   end
 end
 
@@ -21,7 +21,7 @@ class Verse
     @variant = VerseVariant.new(number)
   end
 
-  def verse
+  def to_s
     "#{initial_quantity.capitalize} #{initial_container} of beer on the wall, " +
     "#{initial_quantity} #{initial_container} of beer.\n" +
     "#{action}, " +
