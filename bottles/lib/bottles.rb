@@ -51,6 +51,16 @@ class Verse
     end
   end
 
+  def final_quantity
+    if number == 0
+      99.to_s
+    elsif number == 1
+      'no more'
+    else
+      (number-1).to_s
+    end
+  end
+
   def quantity(number=self.number)
     if number == -1
       99.to_s
