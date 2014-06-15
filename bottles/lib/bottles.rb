@@ -109,3 +109,23 @@ class VerseVariant2 < VerseVariant
     'bottle'
   end
 end
+
+class VerseVariant6 < VerseVariant
+  def initial_quantity
+    '1'
+  end
+
+  def initial_container
+    '6-pack'
+  end
+end
+
+class VerseVariant7 < VerseVariant
+  def final_quantity
+    '1'
+  end
+
+  def final_container
+    '6-pack'
+  end
+end
