@@ -103,4 +103,9 @@ class VerseVariant1 < VerseVariant
   def final_quantity
     'no more'
   end
+
+  def pronoun
+    'it'
+  end
+
 end
