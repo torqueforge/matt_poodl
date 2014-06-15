@@ -43,14 +43,6 @@ class Verse
     end
   end
 
-  def pronoun
-    if number == 1
-      'it'
-    else
-      'one'
-    end
-  end
-
   def quantity(number)
     if number == -1
       99.to_s
@@ -68,4 +60,13 @@ class Verse
       "Take #{pronoun} down and pass it around"
     end
   end
+
+  def pronoun
+    if number == 1
+      'it'
+    else
+      'one'
+    end
+  end
+
 end
