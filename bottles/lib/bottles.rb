@@ -82,3 +82,13 @@ class BottleNumber1 < BottleNumber
     'it'
   end
 end
+
+class BottleNumber6 < BottleNumber
+  def quantity
+    '1'
+  end
+
+  def container
+    '6-pack'
+  end
+end

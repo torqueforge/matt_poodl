@@ -24,6 +24,22 @@ VERSE
     assert_equal expected, bottles.verse(89)
   end
 
+  def test_verse_7
+    expected = <<-VERSE
+7 bottles of beer on the wall, 7 bottles of beer.
+Take one down and pass it around, 1 6-pack of beer on the wall.
+    VERSE
+    assert_equal expected, bottles.verse(7)
+  end
+
+  def test_verse_6
+    expected = <<-VERSE
+1 6-pack of beer on the wall, 1 6-pack of beer.
+Take one down and pass it around, 5 bottles of beer on the wall.
+    VERSE
+    assert_equal expected, bottles.verse(6)
+  end
+
   def test_verse_2
     expected = <<-VERSE
 2 bottles of beer on the wall, 2 bottles of beer.
