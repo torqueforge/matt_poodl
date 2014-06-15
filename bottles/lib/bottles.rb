@@ -13,7 +13,13 @@ class Bottles
   end
 end
 
+require 'forwardable'
 class Verse
+  extend Forwardable
+  delegate [:initial_quantity, :initial_container,
+            :action,
+            :final_quantity, :final_container] => :variant
+
   attr_reader :number, :variant
 
   def initialize(number)
