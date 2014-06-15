@@ -9,8 +9,8 @@ class Bottles
   end
 
   def verse(number)
-    bottle_number = BottleNumber.new(number)
-    next_bottle_number = BottleNumber.new(number-1)
+    bottle_number = bottle_number_for(number)
+    next_bottle_number = bottle_number_for(number-1)
     "#{bottle_number.quantity.capitalize} #{bottle_number.container} of beer on the wall, " +
     "#{bottle_number.quantity} #{bottle_number.container} of beer.\n" +
     "#{bottle_number.action}, " +
