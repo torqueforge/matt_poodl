@@ -67,11 +67,7 @@ class VerseVariant
   end
 
   def final_quantity
-    if number == 0
-      99.to_s
-    else
-      (number-1).to_s
-    end
+    (number-1).to_s
   end
 
   def action
