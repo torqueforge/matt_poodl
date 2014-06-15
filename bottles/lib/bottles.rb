@@ -23,7 +23,7 @@ class Verse
     "#{initial_quantity.capitalize} #{initial_container} of beer on the wall, " +
     "#{initial_quantity} #{initial_container} of beer.\n" +
     "#{action}, " +
-    "#{quantity(number-1)} #{final_container} of beer on the wall.\n"
+    "#{final_quantity} #{final_container} of beer on the wall.\n"
   end
 
   private
