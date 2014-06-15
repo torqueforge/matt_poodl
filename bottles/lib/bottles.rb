@@ -9,7 +9,7 @@ class Bottles
   end
 
   def verse(number)
-    Verse.new(number).to_s
+    Verse.new(VerseVariant.new(number)).to_s
   end
 end
 
@@ -22,8 +22,8 @@ class Verse
 
   attr_reader :variant
 
-  def initialize(number)
-    @variant = VerseVariant.new(number)
+  def initialize(variant)
+    @variant = variant
   end
 
   def to_s
