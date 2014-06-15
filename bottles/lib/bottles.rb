@@ -91,6 +91,11 @@ class VerseVariant0 < VerseVariant
   def final_quantity
     99.to_s
   end
+
+  def action
+    "Go to the store and buy some more"
+  end
+
 end
 
 class VerseVariant1 < VerseVariant
