@@ -10,22 +10,11 @@ class Bottles
 
   def verse(number)
     bottle_number = BottleNumber.bottle_number_for(number)
-    next_bottle_number = bottle_number_for(number == 0 ? 99 : number-1)
+    next_bottle_number = BottleNumber.bottle_number_for(number == 0 ? 99 : number-1)
     "#{bottle_number.quantity.capitalize} #{bottle_number.container} of beer on the wall, " +
     "#{bottle_number.quantity} #{bottle_number.container} of beer.\n" +
     "#{bottle_number.action}, " +
     "#{next_bottle_number.quantity} #{next_bottle_number.container} of beer on the wall.\n"
-  end
-
-  def bottle_number_for(number)
-    case number
-    when 0
-      BottleNumber0
-    when 1
-      BottleNumber1
-    else
-      BottleNumber
-    end.new(number)
   end
 end
 
