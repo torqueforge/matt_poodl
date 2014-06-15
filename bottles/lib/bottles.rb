@@ -11,6 +11,10 @@ class Bottles
   def verse(number)
     Verse.new(VerseVariant.new(number)).to_s
   end
+
+  def variant(number)
+    VerseVariant.new(number)
+  end
 end
 
 require 'forwardable'
