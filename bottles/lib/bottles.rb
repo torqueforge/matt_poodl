@@ -9,7 +9,7 @@ class Bottles
   end
 
   def verse(number)
-    Verse.new(VerseVariant.new(number)).to_s
+    Verse.new(variant(number)).to_s
   end
 
   def variant(number)
