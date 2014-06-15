@@ -35,6 +35,14 @@ class Verse
     end
   end
 
+  def final_container
+    if number == 2
+      'bottle'
+    else
+      'bottles'
+    end
+  end
+
   def container(number=self.number)
     if number == 1
       'bottle'
