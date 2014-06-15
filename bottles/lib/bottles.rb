@@ -19,16 +19,6 @@ end
 
 class Fixnum
   def to_bottle_number
-
-    case self
-    when 0
-      BottleNumber0
-    when 1
-      BottleNumber1
-    else
-      BottleNumber
-    end.new(self)
-
     begin
       Object.const_get("BottleNumber#{self}")
     rescue NameError
