@@ -51,11 +51,7 @@ class VerseVariant
   end
 
   def initial_container
-    if number == 1
-      'bottle'
-    else
-      'bottles'
-    end
+    'bottles'
   end
 
   def final_container
