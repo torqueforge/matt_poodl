@@ -44,9 +44,7 @@ class Verse
   end
 
   def initial_quantity
-    if number == -1
-      99.to_s
-    elsif number == 0
+    if number == 0
       'no more'
     else
       number.to_s
