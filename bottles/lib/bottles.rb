@@ -20,10 +20,9 @@ class Verse
             :action,
             :final_quantity, :final_container] => :variant
 
-  attr_reader :number, :variant
+  attr_reader :variant
 
   def initialize(number)
-    @number = number
     @variant = VerseVariant.new(number)
   end
 
