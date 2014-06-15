@@ -38,6 +38,7 @@ class Verse
     else
       'bottles'
     end
+    VerseVariant.new(number).final_container
   end
 
   def initial_quantity
@@ -46,6 +47,7 @@ class Verse
     else
       number.to_s
     end
+    VerseVariant.new(number).initial_quantity
   end
 
   def final_quantity
@@ -56,6 +58,7 @@ class Verse
     else
       (number-1).to_s
     end
+    VerseVariant.new(number).final_quantity
   end
 
   def action
@@ -64,6 +67,7 @@ class Verse
     else
       "Take #{pronoun} down and pass it around"
     end
+    VerseVariant.new(number).action
   end
 
   def pronoun
@@ -72,6 +76,7 @@ class Verse
     else
       'one'
     end
+    VerseVariant.new(number).pronoun
   end
 end
 
