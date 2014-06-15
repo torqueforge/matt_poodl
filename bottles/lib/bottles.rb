@@ -62,6 +62,10 @@ class BottleNumber
 end
 
 class BottleNumber0 < BottleNumber
+  def next
+    self.class.bottle_number_for(99)
+  end
+
   def quantity
     'no more'
   end
