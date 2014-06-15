@@ -18,6 +18,19 @@ class Bottles
   end
 end
 
+class Fixnum
+  def to_bottle_number
+    case self
+    when 0
+      BottleNumber0
+    when 1
+      BottleNumber1
+    else
+      BottleNumber
+    end.new(self)
+  end
+end
+
 class BottleNumber
   def self.bottle_number_for(number)
     case number
