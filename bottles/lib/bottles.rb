@@ -27,7 +27,7 @@ class Verse
   end
 
   private
-  def container(number)
+  def container(number=self.number)
     if number == 1
       'bottle'
     else
