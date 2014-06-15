@@ -27,7 +27,7 @@ class Verse
   end
 
   private
-  def initial_container(number=self.number)
+  def initial_container
     if number == 1
       'bottle'
     else
