@@ -16,37 +16,37 @@ class Bottles
   end
 
   private
-  def container(number)
-    if number == 1
+  def container(bottle_number)
+    if bottle_number == 1
       'bottle'
     else
       'bottles'
     end
   end
 
-  def pronoun(number)
-    if number == 1
+  def pronoun(bottle_number)
+    if bottle_number == 1
       'it'
     else
       'one'
     end
   end
 
-  def quantity(number)
-    if number == -1
+  def quantity(bottle_number)
+    if bottle_number == -1
       99.to_s
-    elsif number == 0
+    elsif bottle_number == 0
       'no more'
     else
-      number.to_s
+      bottle_number.to_s
     end
   end
 
-  def action(number)
-    if number == 0
+  def action(bottle_number)
+    if bottle_number == 0
       "Go to the store and buy some more"
     else
-      "Take #{pronoun(number)} down and pass it around"
+      "Take #{pronoun(bottle_number)} down and pass it around"
     end
   end
 
